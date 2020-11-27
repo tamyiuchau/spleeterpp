@@ -1,10 +1,12 @@
-Reference
-=========
+Offline Interface
+=================
+
+The simple interface used to run the neural network on large signals.
 
 Initialize
 ^^^^^^^^^^
 
-.. doxygenfunction:: spleeter::Initialize
+.. doxygenfunction:: spleeter::Initialize(const std::string&, const std::unordered_set<SeparationType>&, std::error_code&)
 
 Two stems
 ^^^^^^^^^^

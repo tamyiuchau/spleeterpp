@@ -16,13 +16,13 @@ void Write(const spleeter::Waveform& data, const std::string& name) {
 TEST(Spleeter, TwoStems) {
   // Read wav file
   wave::File file;
-  file.Open(std::string(TEST_FILE), wave::kIn);
+//  std::string test_file("/Users/gvne/Desktop/snipet.wav");
+  std::string test_file(TEST_FILE);
+  file.Open(test_file, wave::kIn);
   std::error_code err;
   std::vector<float> data;
   file.Read(&data);
   auto source = Eigen::Map<spleeter::Waveform>(data.data(), 2, data.size() / 2);
-
-
 
   // ------------------------------
   // Spleeter !

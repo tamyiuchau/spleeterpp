@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classspleeter_1_1Filter" kind="class" language="C++" prot="public">
+    <compoundname>spleeter::Filter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AbstractFilter</basecompoundref>
+    <innerclass refid="classspleeter_1_1Filter_1_1Impl" prot="public">spleeter::Filter::Impl</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1a8305ebded47a397c7945d8fac853d848" prot="private" static="no" mutable="no">
+        <type>SeparationType</type>
+        <definition>SeparationType spleeter::Filter::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="73" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1ac3e48a81917edd3d2c6d9bed675dc252" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; spleeter::Filter::m_volumes</definition>
+        <argsstring></argsstring>
+        <name>m_volumes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="74" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1a03448316e97afcff9491659b822d9d24" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::m_process_length</definition>
+        <argsstring></argsstring>
+        <name>m_process_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="76" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1a0b293bdf6f864908b58dbe3fdc7f87f7" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::m_frame_length</definition>
+        <argsstring></argsstring>
+        <name>m_frame_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="77" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1ab838e9ff6d6fafe01020fa8b4cf761a8" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::m_overlap_length</definition>
+        <argsstring></argsstring>
+        <name>m_overlap_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="78" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1a475ad4c8b4d07fcc24a96779029109a7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool spleeter::Filter::m_force_conservativity</definition>
+        <argsstring></argsstring>
+        <name>m_force_conservativity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="79" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspleeter_1_1Filter_1af5b6d674f8763ef9be09c73580bf5862" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classspleeter_1_1Filter_1_1Impl" kindref="compound">Impl</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Impl&gt; spleeter::Filter::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="82" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspleeter_1_1Filter_1acaaf4345541afe5545c57d867cedf6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>spleeter::Filter::Filter</definition>
+        <argsstring>(SeparationType separation_type)</argsstring>
+        <name>Filter</name>
+        <param>
+          <type>SeparationType</type>
+          <declname>separation_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="14" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="42" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1abaf85eb48aa211b3ca16331ab4f3d485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::Init</definition>
+        <argsstring>(std::error_code &amp;err)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>std::error_code &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the filter with Spleeter specific options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="17" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="60" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1af2a5a206f6a4b361f99b1821b5fa01dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::set_volume</definition>
+        <argsstring>(uint8_t stem_index, float value)</argsstring>
+        <name>set_volume</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>stem_index</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the volume of a given stem <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TODO: give the stem name according to process type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the volume value (0 &lt;= volume &lt;= 1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="24" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1ad4fac13e7116ae1f40d6cf3a3bc6548f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float spleeter::Filter::volume</definition>
+        <argsstring>(uint8_t stem_index) const</argsstring>
+        <name>volume</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>stem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="25" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1af242e0b835bacea0d46744067c241b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::set_ProcessLength</definition>
+        <argsstring>(uint16_t size)</argsstring>
+        <name>set_ProcessLength</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the Neural Network input size <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>reducing that value will reduce the latency but also reduces the temporal information and will lower the quality </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="34" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a29b37edad3b144225a33d632cf04cb3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::ProcessLength</definition>
+        <argsstring>() const</argsstring>
+        <name>ProcessLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="35" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a995a121b3e5300ab2129636943bd6086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::set_FrameLength</definition>
+        <argsstring>(uint16_t size)</argsstring>
+        <name>set_FrameLength</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of frames processed at a time <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Always &lt;= ProcessLength </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="40" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a15fc2c5c47730c3569250e3c44434f6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::FrameLength</definition>
+        <argsstring>() const</argsstring>
+        <name>FrameLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="41" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a3581c17c71107eab3c97ff58c17ba6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::set_OverlapLength</definition>
+        <argsstring>(uint16_t size)</argsstring>
+        <name>set_OverlapLength</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cross fade frame count between each frames. It helps reducing the inconsistency between independent processes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="46" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1af9a655b894367af8b9a52151f1c99d56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t spleeter::Filter::OverlapLength</definition>
+        <argsstring>() const</argsstring>
+        <name>OverlapLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="47" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1ae648103ed818f744b214724e3d621ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::set_ForceConservativity</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>set_ForceConservativity</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Using Spleeter, The sum of each stem may not be conservative. We can force it by deviding each mask by the mask sum <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="52" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1ae8544877085b334b414f838c0b1ae3a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool spleeter::Filter::ForceConservativity</definition>
+        <argsstring>() const</argsstring>
+        <name>ForceConservativity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="53" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a586ab362a4723e419284dff19864def2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t spleeter::Filter::FrameLatency</definition>
+        <argsstring>() const override</argsstring>
+        <name>FrameLatency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Every time we run a process, we will do it on ProcessLength. However, if we decide to reduce FrameLength, it will get more CPU intensive as we will process more often but it will reduce the latency. Latency is T - (T - FrameLength) / 2 If FrameLength = 1, latency is ~T/2 as we always need to process the center of the matrix. It is the one that beneficit the most of temporal information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="62" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="97" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classspleeter_1_1Filter_1add504b493186402aec127b2d021268ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::PrepareToPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>PrepareToPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="66" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="105" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1af398288b3ede3b7f4fe9c463149d80b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spleeter::Filter::AsyncProcessTransformedBlock</definition>
+        <argsstring>(std::vector&lt; std::complex&lt; float &gt; *&gt; data, uint32_t size) override</argsstring>
+        <name>AsyncProcessTransformedBlock</name>
+        <param>
+          <type>std::vector&lt; std::complex&lt; float &gt; *&gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="67" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="165" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classspleeter_1_1Filter_1a41bc38f48ed835cbb3aa3956f4ded44c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t spleeter::Filter::SpleeterFrameLatency</definition>
+        <argsstring>() const</argsstring>
+        <name>SpleeterFrameLatency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/code/src/spleeter_filter/filter.h" line="70" column="1" bodyfile="/code/src/spleeter_filter/filter.cc" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>spleeter::Filter</label>
+        <link refid="classspleeter_1_1Filter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>artff::AbstractFilter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>spleeter::Filter</label>
+        <link refid="classspleeter_1_1Filter"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>artff::AbstractFilter</label>
+      </node>
+    </collaborationgraph>
+    <location file="/code/src/spleeter_filter/filter.h" line="12" column="1" bodyfile="/code/src/spleeter_filter/filter.h" bodystart="12" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classspleeter_1_1Filter_1af398288b3ede3b7f4fe9c463149d80b7" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>AsyncProcessTransformedBlock</name></member>
+      <member refid="classspleeter_1_1Filter_1acaaf4345541afe5545c57d867cedf6f1" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>Filter</name></member>
+      <member refid="classspleeter_1_1Filter_1ae8544877085b334b414f838c0b1ae3a7" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>ForceConservativity</name></member>
+      <member refid="classspleeter_1_1Filter_1a586ab362a4723e419284dff19864def2" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>FrameLatency</name></member>
+      <member refid="classspleeter_1_1Filter_1a15fc2c5c47730c3569250e3c44434f6b" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>FrameLength</name></member>
+      <member refid="classspleeter_1_1Filter_1abaf85eb48aa211b3ca16331ab4f3d485" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>Init</name></member>
+      <member refid="classspleeter_1_1Filter_1a475ad4c8b4d07fcc24a96779029109a7" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_force_conservativity</name></member>
+      <member refid="classspleeter_1_1Filter_1a0b293bdf6f864908b58dbe3fdc7f87f7" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_frame_length</name></member>
+      <member refid="classspleeter_1_1Filter_1af5b6d674f8763ef9be09c73580bf5862" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_impl</name></member>
+      <member refid="classspleeter_1_1Filter_1ab838e9ff6d6fafe01020fa8b4cf761a8" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_overlap_length</name></member>
+      <member refid="classspleeter_1_1Filter_1a03448316e97afcff9491659b822d9d24" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_process_length</name></member>
+      <member refid="classspleeter_1_1Filter_1a8305ebded47a397c7945d8fac853d848" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_type</name></member>
+      <member refid="classspleeter_1_1Filter_1ac3e48a81917edd3d2c6d9bed675dc252" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>m_volumes</name></member>
+      <member refid="classspleeter_1_1Filter_1af9a655b894367af8b9a52151f1c99d56" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>OverlapLength</name></member>
+      <member refid="classspleeter_1_1Filter_1add504b493186402aec127b2d021268ea" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>PrepareToPlay</name></member>
+      <member refid="classspleeter_1_1Filter_1a29b37edad3b144225a33d632cf04cb3e" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>ProcessLength</name></member>
+      <member refid="classspleeter_1_1Filter_1ae648103ed818f744b214724e3d621ecd" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>set_ForceConservativity</name></member>
+      <member refid="classspleeter_1_1Filter_1a995a121b3e5300ab2129636943bd6086" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>set_FrameLength</name></member>
+      <member refid="classspleeter_1_1Filter_1a3581c17c71107eab3c97ff58c17ba6ca" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>set_OverlapLength</name></member>
+      <member refid="classspleeter_1_1Filter_1af242e0b835bacea0d46744067c241b71" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>set_ProcessLength</name></member>
+      <member refid="classspleeter_1_1Filter_1af2a5a206f6a4b361f99b1821b5fa01dc" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>set_volume</name></member>
+      <member refid="classspleeter_1_1Filter_1a41bc38f48ed835cbb3aa3956f4ded44c" prot="private" virt="non-virtual"><scope>spleeter::Filter</scope><name>SpleeterFrameLatency</name></member>
+      <member refid="classspleeter_1_1Filter_1ad4fac13e7116ae1f40d6cf3a3bc6548f" prot="public" virt="non-virtual"><scope>spleeter::Filter</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
